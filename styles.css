@@ -414,7 +414,7 @@ section {
 
 .president-photo {
     width: 100%;
-    height: 450px;
+    aspect-ratio: 5 / 7;
     object-fit: cover;
     border-radius: 8px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
@@ -508,7 +508,7 @@ section {
 
 .officer-photo {
     width: 100%;
-    height: 250px;
+    aspect-ratio: 5 / 7;
     background: linear-gradient(to bottom, #f5f5f5 0%, #efefef 100%);
     display: flex;
     align-items: center;
@@ -520,16 +520,9 @@ section {
     object-fit: cover;
 }
 
-/* First row (3 cards) - larger photos */
-.officer-card:nth-child(1) .officer-photo,
-.officer-card:nth-child(2) .officer-photo,
-.officer-card:nth-child(3) .officer-photo {
-    height: 450px;
-}
-
-/* Remaining rows (4 cards each) - smaller photos */
-.officer-card:nth-child(n+4) .officer-photo {
-    height: 350px;
+/* George Simmons photo positioning adjustment */
+.officer-card:nth-child(6) .officer-photo {
+    object-position: center 20%;
 }
 
 .officer-photo::before {
@@ -882,7 +875,7 @@ section {
 
 .rush-chair-photo {
     width: 100%;
-    height: 300px;
+    aspect-ratio: 5 / 7;
     background: linear-gradient(to bottom, #f5f5f5 0%, #efefef 100%);
     display: flex;
     align-items: center;
@@ -893,6 +886,10 @@ section {
     border-bottom: 1px solid #d8d8d8;
     margin-bottom: 0;
     object-fit: cover;
+}
+
+.rush-chair-card:nth-child(2) .rush-chair-photo {
+    object-position: center 20%;
 }
 
 .rush-chair-card h5 {
@@ -999,8 +996,19 @@ section {
 }
 
 .footer-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     flex: 0 0 auto;
     margin: 0 40px;
+}
+
+.footer-lion-logo {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
 }
 
 .footer-section:last-child {
@@ -1010,7 +1018,9 @@ section {
 .footer-socials {
     display: flex;
     gap: 15px;
-    margin-top: 15px;
+    margin-top: auto;
+    margin-bottom: 0;
+    padding-top: 20px;
     justify-content: center;
 }
 
@@ -1032,6 +1042,7 @@ section {
 
 .footer-section ul li {
     margin-bottom: 10px;
+    color: rgba(255, 255, 255, 0.8);
 }
 
 .footer-section ul li a {
@@ -1048,6 +1059,8 @@ section {
     display: flex;
     gap: 15px;
     margin-top: 15px;
+    padding-top: 20px;
+    justify-content: center;
 }
 
 .footer-socials li a {
@@ -1069,20 +1082,21 @@ section {
 
 .footer-center {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
+    flex: 0 0 auto;
+    margin: 0 40px;
 }
 
-.footer-lion-logo {
-    width: 150px;
-    height: 150px;
-    object-fit: contain;
-    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
+.footer-socials {
+    padding-top: 20px;
 }
 
 .footer-bottom {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     padding-top: 20px;
+    margin-top: 30px;
     text-align: center;
     color: rgba(255, 255, 255, 0.7);
     font-size: 0.9rem;
@@ -1090,6 +1104,7 @@ section {
 
 /* ========== RESPONSIVE DESIGN ========== */
 @media (max-width: 768px) {
+    /* Hamburger Menu */
     .hamburger {
         display: flex;
     }
@@ -1116,30 +1131,9 @@ section {
         padding: 15px;
     }
 
-    .dropdown-menu {
-        position: static;
-        display: none;
-        background: rgba(0, 51, 102, 0.9);
-    }
-
-    .dropdown:hover .dropdown-menu {
-        display: block;
-    }
-
-    .dropdown-link {
-        padding: 10px 20px;
-    }
-
-    .nav-logo {
-        gap: 10px;
-    }
-
-    .crest-logo {
-        width: 40px;
-        height: 40px;
-    }
-
-    .crest-footer {
+    /* Navigation Logo */
+    .red-lion-logo {
+        margin-left: 20px;
         width: 40px;
         height: 40px;
     }
@@ -1152,135 +1146,216 @@ section {
         font-size: 0.65rem;
     }
 
+    /* Hero Section */
     .hero {
-        height: 400px;
+        height: 500px;
+        background-attachment: scroll;
     }
 
     .hero h2 {
-        font-size: 2.2rem;
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
     }
 
     .hero-crest {
-        width: 80px;
-        height: 80px;
+        width: 200px;
+        height: 200px;
+    }
+
+    /* Sections */
+    section {
+        padding: 60px 0;
     }
 
     .section-header h2 {
-        font-size: 1.8rem;
+        font-size: 2rem;
     }
 
-    .about-text h3 {
-        font-size: 1.5rem;
+    /* About Section */
+    .about-text p {
+        font-size: 1rem;
+        text-align: left;
     }
 
-    .involvement-grid {
-        grid-template-columns: 1fr;
+    .about-chapter-crest {
+        width: 180px;
+        height: 180px;
     }
 
+    /* President's Message */
+    .president-content {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .president-photo-container {
+        flex: 1;
+        width: 100%;
+        max-width: 350px;
+        margin: 0 auto;
+    }
+
+    .president-text p {
+        text-align: left;
+        font-size: 1rem;
+    }
+
+    /* Executive Grid */
     .officers-grid {
-        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
     }
 
-    section {
-        padding: 50px 0;
+    .officer-card:nth-child(1),
+    .officer-card:nth-child(2),
+    .officer-card:nth-child(3) {
+        flex: 0 1 100%;
     }
 
-    .recruitment-text h3 {
-        font-size: 1.5rem;
+    .officer-card:nth-child(n+4) {
+        flex: 0 1 calc(50% - 7.5px);
     }
 
+    /* Involvement/Philanthropy */
     .involvement-container {
         flex-direction: column;
     }
 
+    .involvement-gallery {
+        min-height: 400px;
+    }
+
+    /* Recruitment Section */
     .rush-chairs-grid {
         flex-direction: column;
+        align-items: center;
     }
 
     .rush-chair-card {
         width: 100%;
+        max-width: 350px;
     }
 
     .rush-info-links {
         flex-direction: column;
+        gap: 15px;
     }
 
     .info-btn {
         width: 100%;
-        justify-content: center;
-    }
-}
-
-@media (max-width: 480px) {
-    .hero h2 {
-        font-size: 1.8rem;
     }
 
-    .section-header h2 {
-        font-size: 1.5rem;
-    }
-
-    .nav-menu {
-        gap: 0;
-    }
-
-    .nav-item {
-        padding: 10px;
-    }
-
-    .officers-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .values {
-        grid-template-columns: 1fr;
-    }
-
-    .social-links {
-        flex-direction: column;
-    }
-
-    .social-btn {
-        width: 100%;
-        justify-content: center;
-    }
-
-    .rush-info-links {
-        flex-direction: column;
-    }
-
-    .info-btn {
-        width: 100%;
-        justify-content: center;
-    }
-
-    .rush-info-box {
-        padding: 30px 20px;
-    }
-
-    .rush-chairs-section h4 {
-        font-size: 1.5rem;
-    }
-
-    .rush-info-box h4 {
-        font-size: 1.5rem;
-    }
-
+    /* Footer */
     .footer-content {
-        grid-template-columns: 1fr;
+        flex-direction: column;
+        gap: 30px;
         text-align: center;
     }
 
-    .footer-socials {
-        justify-content: center;
+    .footer-section {
+        max-width: 100%;
     }
 
     .footer-center {
-        justify-content: center;
+        margin: 0;
+        order: -1;
     }
 
     .footer-lion-logo {
         width: 120px;
         height: 120px;
     }
+
+    .footer-socials {
+        padding-top: 15px;
+    }
 }
+
+@media (max-width: 480px) {
+    /* Hero */
+    .hero {
+        height: 400px;
+    }
+
+    .hero h2 {
+        font-size: 1.8rem;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+    }
+
+    .hero-crest {
+        width: 150px;
+        height: 150px;
+    }
+
+    .hero::after,
+    .hero::before {
+        display: none;
+    }
+
+    /* Navigation */
+    .red-lion-logo {
+        margin-left: 10px;
+    }
+
+    .nav-item {
+        padding: 12px;
+    }
+
+    /* Sections */
+    section {
+        padding: 40px 0;
+    }
+
+    .section-header h2 {
+        font-size: 1.6rem;
+    }
+
+    /* About */
+    .about-chapter-crest {
+        width: 150px;
+        height: 150px;
+    }
+
+    /* President's Message */
+    .president-photo-container {
+        max-width: 280px;
+    }
+
+    .president-text p {
+        font-size: 0.95rem;
+    }
+
+    /* Executive Grid */
+    .officer-card:nth-child(n+4) {
+        flex: 0 1 100%;
+    }
+
+    /* Recruitment */
+    .rush-info-box {
+        padding: 25px 15px;
+    }
+
+    .rush-info-box h4 {
+        font-size: 1.3rem;
+    }
+
+    /* Footer */
+    .footer-lion-logo {
+        width: 100px;
+        height: 100px;
+    }
+
+    .footer-section h4 {
+        font-size: 1.1rem;
+    }
+
+    .footer-section ul li {
+        font-size: 0.9rem;
+    }
+}
+
