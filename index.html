@@ -3,229 +3,357 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Delta Kappa Epsilon - Delta Alpha Chapter | Auburn University</title>
+    <title>Delta Alpha Chapter of Delta Kappa Epsilon | Auburn University</title>
     <link rel="icon" type="image/png" href="assets/dke-crest.png">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <img src="assets/dke-lionred.png" alt="DKE Lion" class="red-lion-logo">
-                <div class="logo-text">
-                    <h1>Delta Kappa Epsilon</h1>
-                    <p>Delta Alpha Chapter • Est. 2019</p>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-content">
+                <div class="social-links">
+                    <a href="https://www.instagram.com/aubdke" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/aubdke" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://twitter.com/aubdke" target="_blank"><i class="fab fa-twitter"></i></a>
+                </div>
+                <div class="contact-info">
+                    <span><i class="fas fa-map-marker-alt"></i> 405 S Gay St, Auburn, AL 36830</span>
                 </div>
             </div>
-            
-            <ul class="nav-menu">
-                <li class="nav-item">
-                    <a href="#home" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#about" class="nav-link">Our Chapter</a>
-                </li>
-                <li class="nav-item">
-                    <a href="executive.html" class="nav-link">Executive</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#involvement" class="nav-link">Philanthropy</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#recruitment" class="nav-link">Recruitment</a>
-                </li>
-            </ul>
+        </div>
+    </div>
 
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="nav-logo">
+                    <img src="assets/dke-lionred.png" alt="DKE Logo" class="logo-img">
+                    <div class="logo-text">
+                        <h1>DELTA KAPPA EPSILON<span>Delta Alpha Chapter</span><span class="est">Est. 2019</span></h1>
+                    </div>
+                </div>
+                
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#news">NEWS</a></li>
+                    <li><a href="#philanthropy">PHILANTHROPY</a></li>
+                    <li><a href="#recruitment">RECRUITMENT</a></li>
+                    <li><a href="executive.html">OFFICERS</a></li>
+                    <li><a href="#contact" class="btn-contact">CONTACT</a></li>
+                </ul>
+
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="hero-content">
-            <img src="assets/dke-crest.png" alt="DKE Crest" class="hero-crest">
-            <h2>DELTA KAPPA EPSILON</h2>
-            <p>Delta Alpha Chapter • Auburn University</p>
-            <p class="founded">Established 2019</p>
-        </div>
         <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <img src="assets/dke-crest.png" alt="DKE Crest" class="hero-crest">
+                <div class="hero-title">
+                    <h1>DELTA KAPPA EPSILON<span>Delta Alpha Chapter</span><span class="est">Est. 2019</span></h1>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="about">
+    <section id="about" class="about-section">
         <div class="container">
             <div class="section-header">
-                <h2>About Our Chapter</h2>
-                <div class="header-underline"></div>
+                <h2>About the Delta Alpha Chapter</h2>
+                <div class="header-line"></div>
             </div>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>Delta Kappa Epsilon is a historic national fraternity founded in 1844 at Yale University. DKE is focused on building lifelong brotherhood, fostering leadership development, promoting service, and encouraging academic & personal growth for its members.</p>
-                    <p>The Delta Alpha Chapter of DKE was established at Auburn University in 2019. Our chapter embodies the values of friendship, academic excellence, and community service. We are committed to developing men of character who contribute positively to Auburn's community and beyond.</p>
-                    <div class="about-crest">
-                        <img src="assets/crest.png" alt="Chapter Crest" class="about-chapter-crest">
+            <div class="about-text">
+                <p>Delta Kappa Epsilon was founded at Yale University in 1844 and is one of the oldest and most prestigious fraternities in North America. DKE is dedicated to the cultivation of a unique environment which instills a lifelong commitment to brotherhood based on the values of Friendship, Justice, and Learning.</p>
+                <p>The Delta Alpha Chapter of Delta Kappa Epsilon was established at Auburn University in 2019, making us one of the oldest and most prestigious fraternities on campus. Our chapter embodies the timeless values of our founders.</p>
+                <p>We are committed to developing men of character who contribute positively to Auburn's community and beyond through excellence in academics, leadership, service, and brotherhood.</p>
+            </div>
+            <div class="about-image">
+                <img src="assets/crest.png" alt="DKE Crest">
+            </div>
+            <div class="about-cta">
+                <a href="#recruitment" class="btn-primary">Learn More About Joining</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Message from President Section -->
+    <section id="president" class="president-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Message from Our President</h2>
+                <div class="header-line"></div>
+            </div>
+            <div class="president-content">
+                <div class="president-photo">
+                    <img src="assets/president.JPG" alt="Chapter President">
+                    <div class="president-info">
+                        <h3>Jack Hoblock</h3>
+                        <p class="president-title">President, Delta Alpha Chapter</p>
+                        <p>Albany, NY</p>
                     </div>
+                </div>
+                <div class="president-message">
+                    <p>Brothers and prospective members,</p>
+                    <p>It is my honor to serve as President of the Delta Alpha Chapter of Delta Kappa Epsilon. Our chapter has a rich history at Auburn University, spanning over 175 years of excellence in brotherhood, scholarship, and service.</p>
+                    <p>We are committed to upholding the values of Friendship, Justice, and Learning that have guided our fraternity since its founding. Our brothers come from diverse backgrounds but are united in their dedication to personal growth, academic excellence, and making a positive impact on the Auburn community.</p>
+                    <p>Whether you're a prospective member, alumnus, or friend of DKE, I invite you to learn more about our chapter and the opportunities we offer for leadership development, lifelong friendships, and meaningful service.</p>
+                    <p>War Eagle and Friends from the Heart,<br><strong>Jack Hoblock</strong><br>President, Delta Alpha Chapter</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- President's Message Section -->
-    <section id="president-message" class="president-message">
+    <!-- News Section -->
+    <section id="news" class="news-section">
         <div class="container">
             <div class="section-header">
-                <h2>A Message from Our President</h2>
-                <div class="header-underline"></div>
+                <h2>News & Updates</h2>
+                <div class="header-line"></div>
             </div>
-            <div class="president-content">
-                <div class="president-photo-container">
-                    <img src="assets/headshot-placeholder.png" alt="President Jack Hoblock" class="president-photo">
-                    <div class="president-info">
-                        <h3>Jack Hoblock</h3>
-                        <p class="president-title">President, Delta Alpha Chapter</p>
-                        <p class="president-hometown">Albany, NY</p>
+            <div class="news-grid">
+                <article class="news-card">
+                    <div class="news-category">NEWS</div>
+                    <div class="news-image">
+                        <img src="assets/headshot-placeholder.png" alt="News 1">
                     </div>
-                </div>
-                <div class="president-text">
-                    <p>Dear Brothers and Future Members,</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
-                    <p>Totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
-                    <p>War Eagle and Friends from the Heart,</p>
-                    <p class="signature">Jack Hoblock<br>President, Delta Alpha Chapter</p>
-                </div>
+                    <div class="news-content">
+                        <h3>DKE Chapter Excels in Spring Recruitment</h3>
+                        <p class="news-date">January 15, 2026</p>
+                        <p>The Delta Alpha Chapter had an outstanding spring recruitment, welcoming a diverse class of new members who embody our values of Friendship, Justice, and Learning...</p>
+                        <a href="news-spring-recruitment.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                <article class="news-card">
+                    <div class="news-category">ACHIEVEMENT</div>
+                    <div class="news-image">
+                        <img src="assets/headshot-placeholder.png" alt="News 2">
+                    </div>
+                    <div class="news-content">
+                        <h3>Chapter Receives Academic Excellence Award</h3>
+                        <p class="news-date">December 10, 2025</p>
+                        <p>Delta Alpha has been recognized for maintaining one of the highest GPAs among fraternities at Auburn for the fall semester...</p>
+                        <a href="news-academic-excellence.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                <article class="news-card">
+                    <div class="news-category">PHILANTHROPY</div>
+                    <div class="news-image">
+                        <img src="assets/headshot-placeholder.png" alt="News 3">
+                    </div>
+                    <div class="news-content">
+                        <h3>Annual Charity Bowl Raises Record Funds</h3>
+                        <p class="news-date">November 20, 2025</p>
+                        <p>Our chapter's flagship philanthropy event exceeded expectations, raising over $15,000 for local charities and community organizations...</p>
+                        <a href="news-charity-bowl.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
             </div>
         </div>
     </section>
 
     <!-- Philanthropy Section -->
-    <section id="involvement" class="involvement">
+    <section id="philanthropy" class="philanthropy-section">
         <div class="container">
             <div class="section-header">
-                <h2>Philanthropy</h2>
-                <div class="header-underline"></div>
+                <h2>Our Commitment to Service</h2>
+                <div class="header-line"></div>
             </div>
-            
-            <div class="involvement-container" id="philanthropy">
-                <div class="involvement-card">
-                    <div class="involvement-icon">
-                        <i class="fas fa-hands-helping"></i>
-                    </div>
-                    <h3>Making a Difference</h3>
-                    <p>Our Philanthropy Committee is dedicated to making a positive impact on the Auburn community through our service. Our members actively participate in volunteer work, fundraising events, and community outreach programs that embody our commitment to helping others.</p>
-                    <ul class="involvement-list">
-                        <li>Community Service Projects</li>
-                        <li>Charity Events & Fundraising</li>
-                        <li>Mentorship Programs</li>
-                        <li>Local Partnerships</li>
-                    </ul>
+            <div class="philanthropy-hero">
+                <div class="philanthropy-stat-card">
+                    <h3>$15,000+</h3>
+                    <p>Raised Annually</p>
                 </div>
-                <div class="involvement-gallery">
-                    <div class="gallery-container">
-                        <div class="gallery-slide active">
-                            <img src="assets/philanthropy-1.jpeg" alt="Philanthropy Event 1">
+                <div class="philanthropy-stat-card">
+                    <h3>500+</h3>
+                    <p>Volunteer Hours</p>
+                </div>
+                <div class="philanthropy-stat-card">
+                    <h3>10+</h3>
+                    <p>Community Partners</p>
+                </div>
+            </div>
+            <div class="philanthropy-mission">
+                <p>The Delta Alpha Chapter is dedicated to making a lasting impact on the Auburn community and beyond. Through our annual AHERO skeet shooting fundraiser, local volunteer initiatives, and partnerships with charitable organizations, we embody the value of Justice by serving those in need.</p>
+            </div>
+            <div class="philanthropy-carousel">
+                <div class="carousel-container">
+                    <div class="carousel-slide active">
+                        <div class="carousel-image">
+                            <img src="assets/headshot-placeholder.png" alt="Dogs at DKE">
                         </div>
-                        <div class="gallery-slide">
-                            <img src="assets/philanthropy-2.jpeg" alt="Philanthropy Event 2">
+                        <div class="carousel-content">
+                            <h3>Dogs at DKE</h3>
+                            <p>Our chapter partners with local animal shelters to host "Dogs at DKE" events where students can de-stress with therapy dogs while raising awareness and funds for animal rescue organizations in the Auburn area.</p>
+                            <a href="philanthropy-dogs-at-dke.html" class="btn-primary">Read More</a>
                         </div>
                     </div>
-                    <button class="gallery-btn prev" onclick="changeSlide(-1)">&#10094;</button>
-                    <button class="gallery-btn next" onclick="changeSlide(1)">&#10095;</button>
-                    <div class="gallery-dots">
-                        <span class="dot active" onclick="currentSlide(1)"></span>
-                        <span class="dot" onclick="currentSlide(2)"></span>
+                    <div class="carousel-slide">
+                        <div class="carousel-image">
+                            <img src="assets/philanthropy-1-edited.jpeg" alt="AHERO Fundraiser">
+                        </div>
+                        <div class="carousel-content">
+                            <h3>AHERO Skeet Shooting</h3>
+                            <p>Our annual skeet shooting event raises funds for AHERO.org, supporting veterans and medical relief efforts. This signature event brings together brothers, alumni, and the community for a day of shooting sports and service.</p>
+                            <a href="philanthropy-ahero.html" class="btn-primary">Read More</a>
+                        </div>
                     </div>
+                    <div class="carousel-slide">
+                        <div class="carousel-image">
+                            <img src="assets/philanthropy-2.jpeg" alt="Movember">
+                        </div>
+                        <div class="carousel-content">
+                            <h3>Movember</h3>
+                            <p>Each November, our brothers grow mustaches to raise awareness and funds for men's health issues including prostate cancer, testicular cancer, and mental health. We're proud to support the Movember Foundation's mission.</p>
+                            <a href="philanthropy-movember.html" class="btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-btn prev" onclick="moveCarousel(-1)"><i class="fas fa-chevron-left"></i></button>
+                <button class="carousel-btn next" onclick="moveCarousel(1)"><i class="fas fa-chevron-right"></i></button>
+                <div class="carousel-dots">
+                    <span class="dot active" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Recruitment Section -->
-    <section id="recruitment" class="recruitment">
+    <section id="recruitment" class="recruitment-section">
         <div class="container">
             <div class="section-header">
                 <h2>Recruitment</h2>
-                <div class="header-underline"></div>
+                <div class="header-line"></div>
             </div>
             <div class="recruitment-content">
-                <div class="rush-chairs-section">
-                    <div class="rush-chairs-grid">
-                        <div class="rush-chair-card">
-                            <img src="assets/ford-pridgen.jpeg" alt="Co-Rush Chair" class="rush-chair-photo">
-                            <h5>Co-Rush Chair</h5>
-                            <p class="officer-name">Ford Pridgen</p>
-                            <p class="officer-hometown">Atlanta, GA</p>
-                            <p class="officer-contact">404.804.1154</p>
-                            <p class="officer-email">abc123@hotmail.com</p>
-                        </div>
-                        <div class="rush-chair-card">
-                            <img src="assets/george-simmons.jpeg" alt="Co-Rush Chair" class="rush-chair-photo">
-                            <h5>Co-Rush Chair</h5>
-                            <p class="officer-name">George Simmons</p>
-                            <p class="officer-hometown">Mountain Brook, AL</p>
-                            <p class="officer-contact">773.960.8086</p>
-                            <p class="officer-email">abc123@hotmail.com</p>
-                        </div>
+                <div class="rush-chairs-grid">
+                    <div class="rush-chair-card">
+                        <img src="assets/george-simmons.jpeg" alt="Co-Rush Chair">
+                        <h4>George Simmons</h4>
+                        <p class="chair-title">Co-Rush Chair</p>
+                        <p class="chair-location"><i class="fas fa-map-marker-alt"></i> Mountain Brook, AL</p>
+                        <p class="chair-phone"><i class="fas fa-phone"></i> 773.960.8086</p>
+                        <p class="chair-email"><i class="fas fa-envelope"></i> abc123@auburn.edu</p>
                     </div>
-                    <div class="rush-info-box">
-                        <div class="rush-info-links">
-                            <a href="#" class="info-btn">
-                                <i class="fas fa-calendar"></i> Rush Schedule
-                            </a>
-                            <a href="https://www.instagram.com/" class="info-btn">
-                                <i class="fas fa-address-book"></i> IFC Recruitment
-                            </a>
-                            <a href="https://www.instagram.com/" class="info-btn">
-                                <i class="fab fa-instagram"></i> Instagram
-                            </a>
-                        </div>
+                    <div class="rush-chair-card">
+                        <img src="assets/ford-pridgen.jpeg" alt="Co-Rush Chair">
+                        <h4>Ford Pridgen</h4>
+                        <p class="chair-title">Co-Rush Chair</p>
+                        <p class="chair-location"><i class="fas fa-map-marker-alt"></i> Atlanta, GA</p>
+                        <p class="chair-phone"><i class="fas fa-phone"></i> 404.804.1154</p>
+                        <p class="chair-email"><i class="fas fa-envelope"></i> abc123@auburn.edu</p>
                     </div>
+                </div>
+                <div class="rush-buttons">
+                    <a href="#" class="btn-primary">Rush Schedule</a>
+                    <a href="https://www.instagram.com/aubdke" class="btn-secondary"><i class="fab fa-instagram"></i> Follow Us</a>
+                    <a href="https://www.auburn.edu/student_life/student_involvement/greek/" target="_blank" class="btn-secondary">IFC Recruitment</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="footer">
+    <!-- Newsletter Signup -->
+    <section class="newsletter-section">
         <div class="container">
-            <div class="footer-content">
+            <div class="newsletter-content">
+                <div class="newsletter-text">
+                    <h2>Stay Informed</h2>
+                    <p>Sign up to receive email updates from Delta Alpha Chapter with information about news and upcoming events.</p>
+                </div>
+                <form class="newsletter-form">
+                    <input type="text" placeholder="First Name *" required>
+                    <input type="text" placeholder="Last Name *" required>
+                    <input type="email" placeholder="Email Address *" required>
+                    <button type="submit" class="btn-submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-top">
                 <div class="footer-section">
-                    <h4>Navigation</h4>
+                    <h4>About</h4>
                     <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">Chapter</a></li>
-                        <li><a href="executive.html">Executive</a></li>
-                        <li><a href="#philanthropy">Philanthropy</a></li>
-                        <li><a href="#recruitment">Recruitment</a></li>
+                        <li><a href="#about">Chapter History</a></li>
+                        <li><a href="executive.html">Chapter Officers</a></li>
+                        <li><a href="#about">Achievements & Awards</a></li>
+                        <li><a href="#about">Founding Principles</a></li>
+                        <li><a href="#about">Values of DKE</a></li>
                     </ul>
                 </div>
-                <div class="footer-section footer-center">
-                    <img src="assets/dke-lionwhite.png" alt="DKE Lion" class="footer-lion-logo">
-                    <ul class="footer-socials">
-                        <li><a href="https://www.instagram.com/auburndke"><i class="fab fa-instagram"></i></a></li>
-                        <li><a href="https://www.facebook.com/auburndke"><i class="fab fa-facebook"></i></a></li>
-                        <li><a href="https://www.facebook.com/auburndke"><i class="fab fa-twitter"></i></a></li>
+                <div class="footer-section">
+                    <h4>Recruitment</h4>
+                    <ul>
+                        <li><a href="#events">Recruitment Events</a></li>
+                        <li><a href="#recruitment">Why DKE?</a></li>
+                        <li><a href="#recruitment">Membership Application</a></li>
+                        <li><a href="#recruitment">Are You A Legacy?</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h4>Delta Kappa Epsilon</h4>
+                    <h4>Philanthropy</h4>
                     <ul>
-                        <li>319 N College St</li>
-                        <li>Auburn, AL 36830</li>
-                        <li>(123) 456-7890</li>
-                        <li>contact@auburndke.com</li>
+                        <li><a href="#philanthropy">Our Impact</a></li>
+                        <li><a href="#philanthropy">Charity</a></li>
+                        <li><a href="#philanthropy">Community Partners</a></li>
+                        <li><a href="#philanthropy">Volunteer Opportunities</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Parents & Alumni</h4>
+                    <ul>
+                        <li><a href="#events">Parent Events</a></li>
+                        <li><a href="#events">Alumni Events</a></li>
+                        <li><a href="#contact">Update Your Information</a></li>
+                        <li><a href="#contact">Membership Referral</a></li>
                     </ul>
                 </div>
             </div>
+            <div class="footer-middle">
+                <div class="footer-logo">
+                    <img src="assets/dke-lionred.png" alt="DKE Logo">
+                </div>
+                <div class="footer-contact">
+                    <p><strong>Delta Alpha Chapter of Delta Kappa Epsilon</strong></p>
+                    <p><i class="fas fa-map-marker-alt"></i> 405 S Gay St, Auburn, AL 36830</p>
+                    <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+                    <p><i class="fas fa-envelope"></i> contact@aubdke.com</p>
+                </div>
+                <div class="footer-social">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/aubdke" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/aubdke" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://twitter.com/aubdke" target="_blank"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 Delta Kappa Epsilon - Delta Alpha Chapter. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Site Map</a>
+                    <a href="#contact">Contact Us</a>
+                </div>
+                <p>&copy; 2026 Delta Alpha Chapter of Delta Kappa Epsilon. All rights reserved.</p>
             </div>
         </div>
     </footer>
